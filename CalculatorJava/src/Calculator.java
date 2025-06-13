@@ -15,9 +15,9 @@ public class Calculator {
 
         //First number
         System.out.println("Indicate the first number");
-        int numberOne = keyBoard.nextInt();
+        float numberOne = keyBoard.nextInt();
         System.out.println("Indicate the second number");
-        int numberTwo = keyBoard.nextInt();
+        float numberTwo = keyBoard.nextInt();
         System.out.println("Indicate the arithmetic symbol of operation: +, -, *, /");
         char symbol = keyBoard.next().charAt(0); //To read a single character with Scanner, I google it :)
         keyBoard.nextLine();
@@ -26,7 +26,7 @@ public class Calculator {
         // Arithmetics symbols are operators, it can be stored as int
         System.out.println("The operation is: " + numberOne + symbol + numberTwo);
 
-        int result = 0; //New variable
+        float result = 0; //New variable
 
         //Mix of if and else if to use the arithmetics symbols
         //Instructions to make the operations
